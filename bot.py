@@ -9,12 +9,13 @@ def blalala (message):
     button_1 = types.KeyboardButton ("Мороженое")
     button_2 = types.KeyboardButton ("Шашлык")
     button_3 = types.KeyboardButton ("Пиво")
-    key.add (button_1, button_2, button_3)
+    key.add (button_1, button_2)
+    key.add (button_3)
     bot.send_message (message.chat.id, 'Что вкуснее?', reply_markup = key)
 
 @bot.message_handler (content_types=['text'])
 def hohoho (message):
-    markup_inline = types.InlineKeyboardMarkup (row_width = 3)
+    markup_inline = types.InlineKeyboardMarkup ()
     if message.text == 'Мороженое':
         bot.send_message (message.chat.id, "Тоже его обожаю!!!", reply_markup=markup_inline)
     elif message.text == 'Шашлык':
