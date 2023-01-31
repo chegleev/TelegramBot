@@ -26,4 +26,4 @@ def hohoho (message):
         bot.send_message (message.chat.id, "Чёт не то ты мне прислал!!!", reply_markup=markup_inline)
     print(message.text)
 
-bot.polling(none_stop=True)
+bot.infinity_polling()
