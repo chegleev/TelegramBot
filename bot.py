@@ -16,11 +16,11 @@ def blalala (message):
 @bot.message_handler (content_types=['text'])
 def hohoho (message):
     markup_inline = types.InlineKeyboardMarkup ()
-    if message.text == 'Мороженое':
+    if message.text == 'Ice cream':
         bot.send_message (message.chat.id, "I love ice cream too!", reply_markup=markup_inline)
-    elif message.text == 'Шашлык':
+    elif message.text == 'Meat':
         bot.send_message (message.chat.id, "I don't like meat, I'm a vegetarian!", reply_markup=markup_inline)
-    elif message.text == 'Пиво':
+    elif message.text == 'Beer':
         bot.send_message (message.chat.id, "I do not like beer!, reply_markup=markup_inline)
     else:
         bot.send_message (message.chat.id, "Incorrect message!", reply_markup=markup_inline)
