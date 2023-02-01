@@ -11,7 +11,7 @@ def blalala (message):
     button_3 = types.KeyboardButton ("Beer")
     key.add (button_1, button_2)
     key.add (button_3)
-    bot.send_message (message.chat.id, 'Что вкуснее?', reply_markup = key)
+    bot.send_message (message.chat.id, 'What tastes better?', reply_markup = key)
 
 @bot.message_handler (content_types=['text'])
 def hohoho (message):
