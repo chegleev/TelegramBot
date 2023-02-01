@@ -4,7 +4,7 @@ from telebot import types
 bot = telebot.TeleBot("TOKEN")
 
 @bot.message_handler(commands=['start'])
-def blalala (message):
+def blablabla (message):
     key = types.ReplyKeyboardMarkup (resize_keyboard = True)
     button_1 = types.KeyboardButton ("Ice cream")
     button_2 = types.KeyboardButton ("Meat")
