@@ -21,7 +21,7 @@ def hohoho (message):
     elif message.text == 'Meat':
         bot.send_message (message.chat.id, "I don't like meat, I'm a vegetarian!", reply_markup=markup_inline)
     elif message.text == 'Beer':
-        bot.send_message (message.chat.id, "I do not like beer!, reply_markup=markup_inline)
+        bot.send_message (message.chat.id, "I do not like beer!", reply_markup=markup_inline)
     else:
         bot.send_message (message.chat.id, "Incorrect message!", reply_markup=markup_inline)
     print(message.text)
